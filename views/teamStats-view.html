@@ -1,0 +1,26 @@
+<div ng-controller="TeamController as singleTeam" ng-init="singleTeam.teamDetails()">
+
+ <div class="container">
+ 	<div class= "row">
+ 		<div class="col-lg-12 col-md-12 col-sm-12 mt-1" >
+          	<a href="#!first" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg btn-block">EPL 2015-16</button></a>
+ 		</div>
+
+  		<div class="col-lg-12 col-md-12 col-sm-12 mt-1" >
+         	 <a href="#!sec" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg btn-block">EPL 2016-17</button></a>
+ 		</div>
+    </div>
+</div>
+
+<div class="team-stats">
+<ul>
+<h2 style="text-align: center; border-bottom: 1px solid #333;padding-bottom:10px; ">{{singleTeam.teamId}} Details</h2>
+<li>Total Matches Palyed : <span id="score" style="font-weight: bold"></span></li>
+<li>Total Matches won : <span id="win" style="font-weight: bold"></span></li>
+<li>Total Matches lost : <span id="loss" style="font-weight: bold"></span></li>
+<li>Total Matches draw : <span id="draw" style="font-weight: bold"></span></li>
+<li>Total Goal Scored : <span id="goal" style="font-weight: bold"></span></li>
+</ul>
+</div>
+</div>
+
